@@ -239,7 +239,7 @@ let material = new THREE.MeshBasicMaterial({ map: texture, wireframe: true });
 let mesh = new THREE.Mesh(geometry, material);
 
 scene.add(mesh);
-
+mesh.rotation.y = Math.PI
 let previousMaterial = null;
 
 function createTexture(u, v) {
